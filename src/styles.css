@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tab {
+    @apply rounded h-full flex items-center justify-center relative w-full max-w-[200px] cursor-pointer;
+
+    button {
+        @apply rounded flex items-center justify-center w-8 h-8 aspect-square hover:shadow-xl transition hover:bg-gray-50 absolute right-2;
+    }
+
+    &.active {
+        @apply shadow-md cursor-default;
+    }
+}
